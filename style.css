@@ -13,6 +13,10 @@ body{
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
+
+}
+
+section{
     display: flex;
     justify-content: center;
 }
@@ -22,7 +26,7 @@ body{
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;
+    height: 85vh;
 }
 
 .instagram-phone{
@@ -127,11 +131,54 @@ body{
     background-image: url(./images/googleplay-button.png);
 }
 
+footer{
+    width: auto;
+    margin-top: auto;
+}
+
+.links-uteis{
+    margin: 0 20%;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links-uteis-itens{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+    margin: 0.50rem 0.50rem;
+}
+
+.rodape{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+    margin: 0 0.50rem;
+}
+
 /* media queries*/
 
 @media (max-width: 1024px) {
     .instagram-wrapper{
         width: 90%;
+    }
+
+    .links-uteis{
+        padding: 1em;
+        margin: auto;
+    }
+
+    .links-uteis-itens{
+        margin:0.45rem 0.50rem;
+        font-size: 12px;
+    }
+
+    .rodape{
+        margin:0.30rem 0.35rem;
+        font-size: 12px;
     }
 }
 
@@ -142,7 +189,8 @@ body{
     }
 
     .instagram-wrapper{
-        width: 90%;
+        width: 80vh;
+        height: 75vh;
     }
     
     .instagram-phone{
@@ -155,5 +203,21 @@ body{
 
     .group{
         border: 1px solid transparent;
+        margin-bottom: 4em;
+    }
+
+    .links-uteis{
+        padding: 1em;
+        margin: auto;
+    }
+
+    .links-uteis-itens{
+        margin:0.45rem 0.50rem;
+        font-size: 12px;
+    }
+
+    .rodape{
+        margin:0.30rem 0.35rem;
+        font-size: 12px;
     }
 }
